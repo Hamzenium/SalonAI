@@ -77,7 +77,7 @@ The application is designed in layered components for scalability and maintainab
 ---
 
 ## Technology Stack
-- **Backend**: Python 3, Flask (with optional Flask-RESTX, Flask-Restful, or SQLAlchemy)  
+- **Backend**: Python3 (Flask & FastApi) & Golang
 - **Front-End**: Next.js 13 (Node.js, TypeScript/JavaScript)  
 - **Mobile (Optional)**: React Native (JavaScript/TypeScript)  
 - **Database**: PostgreSQL (preferred) or MySQL  
