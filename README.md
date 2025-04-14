@@ -1,4 +1,4 @@
-# 🧔 Barbershop Appointment System
+# Barbershop Appointment System
 
 A modular, microservices-based platform that enables barbers and clients to manage appointments efficiently. The system supports real-time notifications, smart ML-based predictions, and personalized barber recommendations.
 
