@@ -4,7 +4,7 @@ A modular, microservices-based platform that enables barbers and clients to mana
 
 ---
 
-## ⚙️ Architecture Diagram
+## Architecture Diagram
 
 ```
                   +--------------------+
@@ -29,11 +29,11 @@ A modular, microservices-based platform that enables barbers and clients to mana
    +----+-----+          (Pub/Sub via RabbitMQ)
    | RabbitMQ | -----------------------------------+
    +----+-----+                                    |
-        |                                          v
-        |                               +------------------------+
-        |                               | Notification Service   |
-        |                               |       (Go)             |
-        |                               +------------------------+
+                                                   v
+                                        +------------------------+
+                                        | Notification Service   |
+                                        |       (Go)             |
+                                        +------------------------+
 ```
 
 ---
@@ -60,7 +60,7 @@ A modular, microservices-based platform that enables barbers and clients to mana
   - Smart suggestions (e.g., best slots)
 - Consumed **directly by the Frontend** via HTTP
 
-### 🎯 Recommender Service
+###  Recommender Service
 - Suggests top barbers based on:
   - Estimated haircut type based on face features
   - Preferences
@@ -68,7 +68,7 @@ A modular, microservices-based platform that enables barbers and clients to mana
 
 ---
 
-## 🗃️ MongoDB
+## MongoDB
 
 Stores collections for:
 - Users
@@ -79,7 +79,7 @@ Stores collections for:
 
 ---
 
-## 📩 RabbitMQ (Pub/Sub)
+## RabbitMQ (Pub/Sub)
 
 - Core Service publishes:
   - `BOOKING_CONFIRMED`
